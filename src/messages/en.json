@@ -1,0 +1,96 @@
+{
+    "nav": {
+        "about": "About",
+        "skills": "Skills",
+        "experience": "Experience",
+        "projects": "Projects",
+        "education": "Education",
+        "contact": "Contact"
+    },
+    "hero": {
+        "greeting": "Hi, I'm",
+        "title": "Frontend Developer",
+        "tagline": "4+ years of experience building modern, performant, and user-friendly web interfaces.",
+        "cta": {
+            "download": "Download CV",
+            "contact": "Contact Me"
+        }
+    },
+    "about": {
+        "heading": "About Me",
+        "bio": "I'm a Frontend Developer with over 4 years of experience building modern web applications. I'm passionate about creating beautiful interfaces, optimizing performance, and delivering the best user experience.",
+        "stats": {
+            "years": "Years of Experience",
+            "projects": "Projects",
+            "technologies": "Technologies"
+        },
+        "highlights": {
+            "title": "Strengths",
+            "responsive": "Responsive Design",
+            "performance": "Performance Optimization",
+            "clean": "Clean Code & Best Practices",
+            "ux": "UI/UX Thinking"
+        }
+    },
+    "skills": {
+        "heading": "Skills",
+        "languages": "Languages",
+        "frameworks": "Frameworks & Libraries",
+        "styling": "Styling",
+        "tools": "Tools",
+        "others": "Others"
+    },
+    "experience": {
+        "heading": "Experience",
+        "abc": {
+            "desc1": "Developed and maintained web applications with React and Next.js",
+            "desc2": "Optimized website performance, improved Core Web Vitals",
+            "desc3": "Code review and mentoring for junior developers"
+        },
+        "xyz": {
+            "desc1": "Built responsive user interfaces with React",
+            "desc2": "Integrated REST APIs and managed state with Redux"
+        }
+    },
+    "projects": {
+        "heading": "Projects",
+        "viewDemo": "View Demo",
+        "viewCode": "View Code",
+        "project1": {
+            "title": "E-Commerce Platform",
+            "description": "E-commerce platform with cart, checkout, and product management."
+        },
+        "project2": {
+            "title": "Task Management App",
+            "description": "Task management application with drag & drop and real-time updates."
+        }
+    },
+    "education": {
+        "heading": "Education"
+    },
+    "contact": {
+        "heading": "Contact",
+        "subtitle": "Have an interesting project? Get in touch with me!",
+        "name": "Full Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send Message",
+        "info": {
+            "email": "Email",
+            "phone": "Phone",
+            "location": "Location"
+        }
+    },
+    "footer": {
+        "rights": "All rights reserved by",
+        "builtWith": "Built with"
+    },
+    "theme": {
+        "light": "Light",
+        "dark": "Dark"
+    },
+    "language": {
+        "vi": "Tiếng Việt",
+        "en": "English"
+    }
+}

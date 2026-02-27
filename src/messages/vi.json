@@ -1,0 +1,96 @@
+{
+    "nav": {
+        "about": "Giới thiệu",
+        "skills": "Kỹ năng",
+        "experience": "Kinh nghiệm",
+        "projects": "Dự án",
+        "education": "Học vấn",
+        "contact": "Liên hệ"
+    },
+    "hero": {
+        "greeting": "Xin chào, tôi là",
+        "title": "Frontend Developer",
+        "tagline": "4+ năm kinh nghiệm xây dựng giao diện web hiện đại, tối ưu hiệu năng và trải nghiệm người dùng.",
+        "cta": {
+            "download": "Tải CV",
+            "contact": "Liên hệ tôi"
+        }
+    },
+    "about": {
+        "heading": "Giới thiệu",
+        "bio": "Tôi là một Frontend Developer với hơn 4 năm kinh nghiệm trong việc xây dựng các ứng dụng web hiện đại. Tôi đam mê việc tạo ra những giao diện đẹp, tối ưu hiệu năng và mang lại trải nghiệm tốt nhất cho người dùng.",
+        "stats": {
+            "years": "Năm kinh nghiệm",
+            "projects": "Dự án",
+            "technologies": "Công nghệ"
+        },
+        "highlights": {
+            "title": "Điểm mạnh",
+            "responsive": "Responsive Design",
+            "performance": "Performance Optimization",
+            "clean": "Clean Code & Best Practices",
+            "ux": "UI/UX Thinking"
+        }
+    },
+    "skills": {
+        "heading": "Kỹ năng",
+        "languages": "Ngôn ngữ",
+        "frameworks": "Frameworks & Libraries",
+        "styling": "Styling",
+        "tools": "Công cụ",
+        "others": "Khác"
+    },
+    "experience": {
+        "heading": "Kinh nghiệm",
+        "abc": {
+            "desc1": "Phát triển và bảo trì các ứng dụng web với React và Next.js",
+            "desc2": "Tối ưu hiệu năng website, cải thiện Core Web Vitals",
+            "desc3": "Code review và mentoring cho junior developers"
+        },
+        "xyz": {
+            "desc1": "Xây dựng giao diện người dùng responsive với React",
+            "desc2": "Tích hợp REST API và quản lý state với Redux"
+        }
+    },
+    "projects": {
+        "heading": "Dự án",
+        "viewDemo": "Xem Demo",
+        "viewCode": "Xem Code",
+        "project1": {
+            "title": "E-Commerce Platform",
+            "description": "Nền tảng thương mại điện tử với giỏ hàng, thanh toán và quản lý sản phẩm."
+        },
+        "project2": {
+            "title": "Task Management App",
+            "description": "Ứng dụng quản lý công việc với drag & drop, real-time updates."
+        }
+    },
+    "education": {
+        "heading": "Học vấn"
+    },
+    "contact": {
+        "heading": "Liên hệ",
+        "subtitle": "Bạn có dự án thú vị? Hãy liên hệ với tôi!",
+        "name": "Họ và tên",
+        "email": "Email",
+        "message": "Tin nhắn",
+        "send": "Gửi tin nhắn",
+        "info": {
+            "email": "Email",
+            "phone": "Điện thoại",
+            "location": "Địa chỉ"
+        }
+    },
+    "footer": {
+        "rights": "Bản quyền thuộc về",
+        "builtWith": "Xây dựng với"
+    },
+    "theme": {
+        "light": "Sáng",
+        "dark": "Tối"
+    },
+    "language": {
+        "vi": "Tiếng Việt",
+        "en": "English"
+    }
+}
