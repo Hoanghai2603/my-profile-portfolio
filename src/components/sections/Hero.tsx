@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, Variants } from "framer-motion";
 import { Download, ArrowDown } from "lucide-react";
 import { profile } from "@/data/profile";
 
@@ -9,14 +9,14 @@ export function Hero() {
     const t = useTranslations("hero");
     const shouldReduceMotion = useReducedMotion();
 
-    const containerVariants = {
+    const containerVariants: Variants = {
         hidden: {},
         visible: {
             transition: { staggerChildren: shouldReduceMotion ? 0 : 0.12 },
         },
     };
 
-    const itemVariants = {
+    const itemVariants: Variants = {
         hidden: shouldReduceMotion
             ? { opacity: 1 }
             : { opacity: 0, y: 30 },
