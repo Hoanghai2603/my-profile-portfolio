@@ -5,7 +5,6 @@ import { useTranslations } from "next-intl";
 import { ThemeToggle } from "./ThemeToggle";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { Menu, X } from "lucide-react";
-import { profile } from "@/data/profile";
 
 const navItems = [
     { key: "about", href: "#about" },
@@ -47,11 +46,9 @@ export function Navbar() {
                 {/* Logo */}
                 <a
                     href="#"
-                    className="font-[var(--font-heading)] text-lg font-bold tracking-tight text-[var(--text)] cursor-pointer hover:text-[var(--accent)] transition-colors duration-200"
-                    style={{ fontFamily: "var(--font-heading)" }}
+                    className="font-heading text-lg font-bold tracking-tight text-[var(--text)] cursor-pointer hover:text-[var(--accent)] transition-colors duration-200"
                 >
-                    {profile.name.split(" ").pop()}
-                    <span className="text-[var(--accent)]">.</span>
+                    {t("name")}
                 </a>
 
                 {/* Desktop Nav */}
@@ -100,8 +97,7 @@ export function Navbar() {
                             key={item.key}
                             href={item.href}
                             onClick={() => setIsMobileOpen(false)}
-                            className="text-2xl font-medium text-[var(--text)] hover:text-[var(--accent)] transition-colors duration-200 cursor-pointer"
-                            style={{ fontFamily: "var(--font-heading)" }}
+                            className="font-heading text-2xl font-medium text-[var(--text)] hover:text-[var(--accent)] transition-colors duration-200 cursor-pointer"
                         >
                             {t(item.key)}
                         </a>

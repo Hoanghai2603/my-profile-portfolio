@@ -1,94 +1,120 @@
-"use client";
-
 import { useTranslations } from "next-intl";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 import { experiences } from "@/data/profile";
-import { Briefcase } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 export function Experience() {
-    const t = useTranslations("experience");
+  const t = useTranslations();
 
-    return (
-        <section id="experience" className="section-spacing">
-            <div className="section-container">
-                <AnimateOnScroll>
-                    <h2
-                        className="text-3xl md:text-5xl font-black mb-4 tracking-tight"
-                        style={{ fontFamily: "var(--font-heading)" }}
+  return (
+    <section id="experience" className="section-spacing">
+      <div className="section-container">
+        <AnimateOnScroll>
+          <h2
+            className="text-3xl md:text-5xl font-black mb-4 tracking-tight"
+          >
+            {t("experience.heading")}
+            <span className="text-[var(--accent)]">.</span>
+          </h2>
+          <div className="w-16 h-[3px] bg-[var(--accent)] mb-12" />
+        </AnimateOnScroll>
+
+        <div className="space-y-12">
+          {experiences.map((exp, i) => (
+            <AnimateOnScroll key={i} delay={i * 0.15} variant="fadeUp">
+              <div className="p-6 md:p-8 rounded-xl bg-[var(--surface)] border border-[var(--border)] relative overflow-hidden group">
+                {/* Header */}
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4 gap-4">
+                  <div>
+                    <h3
+                      className="text-xl md:text-2xl font-bold text-[var(--text)] mb-1"
                     >
-                        {t("heading")}
-                        <span className="text-[var(--accent)]">.</span>
-                    </h2>
-                    <div className="w-16 h-[3px] bg-[var(--accent)] mb-12" />
-                </AnimateOnScroll>
-
-                {/* Timeline */}
-                <div className="relative">
-                    {/* Timeline line */}
-                    <div className="absolute left-0 md:left-8 top-0 bottom-0 w-[2px] bg-[var(--border)]" />
-
-                    <div className="space-y-12">
-                        {experiences.map((exp, i) => (
-                            <AnimateOnScroll key={i} delay={i * 0.15} variant="slideRight">
-                                <div className="relative pl-8 md:pl-20">
-                                    {/* Timeline dot */}
-                                    <div className="absolute left-0 md:left-8 top-1 -translate-x-1/2 w-4 h-4 bg-[var(--accent)] border-[3px] border-[var(--bg)]" />
-
-                                    {/* Period badge */}
-                                    <div className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider text-[var(--accent)] bg-[var(--accent)]/10 mb-3">
-                                        {exp.period}
-                                    </div>
-
-                                    {/* Content card */}
-                                    <div className="p-6 bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent)]/30 transition-colors duration-200">
-                                        <div className="flex items-start gap-3 mb-3">
-                                            <Briefcase className="w-5 h-5 text-[var(--accent)] mt-0.5 shrink-0" />
-                                            <div>
-                                                <h3
-                                                    className="text-lg font-bold"
-                                                    style={{ fontFamily: "var(--font-heading)" }}
-                                                >
-                                                    {exp.role}
-                                                </h3>
-                                                <p className="text-sm text-[var(--text-muted)] font-medium">
-                                                    {exp.company}
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                        <ul className="space-y-2 mb-4 ml-8">
-                                            {exp.descriptionKeys.map((descKey, j) => {
-                                                const parts = descKey.split(".");
-                                                const company = parts[1];
-                                                const desc = parts[2];
-                                                return (
-                                                    <li
-                                                        key={j}
-                                                        className="text-sm text-[var(--text-muted)] relative before:content-['—'] before:absolute before:-left-5 before:text-[var(--accent)]"
-                                                    >
-                                                        {t(`${company}.${desc}`)}
-                                                    </li>
-                                                );
-                                            })}
-                                        </ul>
-
-                                        <div className="flex flex-wrap gap-2">
-                                            {exp.techStack.map((tech) => (
-                                                <span
-                                                    key={tech}
-                                                    className="px-2 py-1 text-xs font-medium text-[var(--accent)] bg-[var(--accent)]/8 border border-[var(--accent)]/20"
-                                                >
-                                                    {tech}
-                                                </span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
-                            </AnimateOnScroll>
-                        ))}
-                    </div>
+                      {exp.role}
+                    </h3>
+                    <p className="text-[var(--text-muted)] font-medium text-lg">
+                      {exp.company}
+                    </p>
+                  </div>
+                  <div className="text-left md:text-right">
+                    <p className="text-[var(--text-muted)] font-medium mb-1">
+                      {exp.period}
+                    </p>
+                  </div>
                 </div>
-            </div>
-        </section>
-    );
+
+                {/* Summary */}
+                {exp.summaryKey && (
+                  <p className="text-[var(--text-muted)] mb-8 leading-relaxed">
+                    {t(exp.summaryKey)}
+                  </p>
+                )}
+
+                {/* Projects Section */}
+                <div className="bg-[var(--bg)] rounded-xl border border-[var(--border)] p-5 md:p-8">
+                  <div className="relative">
+                    {/* Timeline line */}
+                    <div className="absolute left-[7px] top-2 bottom-4 w-[2px] bg-[var(--border)]" />
+
+                    <div className="space-y-10">
+                      {exp.projects.map((proj, pIdx) => (
+                        <div key={pIdx} className="relative pl-8 md:pl-10">
+                          {/* Timeline dot */}
+                          <div className="absolute left-0 top-1.5 w-4 h-4 rounded-full border-[3px] border-[var(--text-muted)] bg-[var(--bg)] z-10" />
+
+                          <h4
+                            className="text-lg font-bold text-[var(--text)] mb-2"
+                          >
+                            {proj.name}
+                          </h4>
+
+                          {proj.descriptionKey && (
+                            <p className="text-[var(--text-muted)] italic text-sm mb-4">
+                              {t(proj.descriptionKey)}
+                            </p>
+                          )}
+
+                          <div className="flex flex-wrap gap-2 mb-4">
+                            {proj.techStack.map((tech) => (
+                              <span
+                                key={tech}
+                                className="px-3 py-1 text-xs font-medium text-[var(--text-muted)] bg-[var(--surface)] border border-[var(--border)] rounded-md"
+                              >
+                                {tech}
+                              </span>
+                            ))}
+                          </div>
+
+                          <ul className="space-y-3">
+                            {proj.bulletKeys.map((bk) => {
+                              const text = t(
+                                `experience.${exp.companyKey}.${bk}`,
+                              );
+                              // Optional regex to strip [Client-side] just in case it's lingering
+                              const cleanText = text.replace(/^\[.*?\]\s*/, "");
+
+                              return (
+                                <li
+                                  key={bk}
+                                  className="text-[var(--text-muted)] text-sm md:text-base flex items-start gap-3"
+                                >
+                                  <ChevronRight className="w-4 h-4 text-[var(--text-muted)] shrink-0 mt-1" />
+                                  <span className="leading-relaxed">
+                                    {cleanText}
+                                  </span>
+                                </li>
+                              );
+                            })}
+                          </ul>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </AnimateOnScroll>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

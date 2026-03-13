@@ -1,16 +1,20 @@
 {
+    "location": {
+        "hcm": "Hà Nội"
+    },
     "nav": {
         "about": "Giới thiệu",
         "skills": "Kỹ năng",
         "experience": "Kinh nghiệm",
         "projects": "Dự án",
         "education": "Học vấn",
-        "contact": "Liên hệ"
+        "contact": "Liên hệ",
+        "name": "Nguyễn Hoàng Hải"
     },
     "hero": {
         "greeting": "Xin chào, tôi là",
-        "title": "Frontend Developer",
-        "tagline": "4+ năm kinh nghiệm xây dựng giao diện web hiện đại, tối ưu hiệu năng và trải nghiệm người dùng.",
+        "title": "Frontend Engineer & Software Engineer",
+        "tagline": "Tôi là Kỹ sư phần mềm chuyên về phát triển front-end với React/Next.js và TypeScript. Có kinh nghiệm xây dựng các ứng dụng web mở rộng và dễ bảo trì. Dày dặn kinh nghiệm trong các dự án FinTech và blockchain, xử lý những tập dữ liệu hàng triệu bản ghi cùng lúc và thiết kế kiến trúc hệ thống quản lý kho hàng quy mô doanh nghiệp.",
         "cta": {
             "download": "Tải CV",
             "contact": "Liên hệ tôi"
@@ -18,15 +22,15 @@
     },
     "about": {
         "heading": "Giới thiệu",
-        "bio": "Tôi là một Frontend Developer với hơn 4 năm kinh nghiệm trong việc xây dựng các ứng dụng web hiện đại. Tôi đam mê việc tạo ra những giao diện đẹp, tối ưu hiệu năng và mang lại trải nghiệm tốt nhất cho người dùng.",
+        "bio": "Tôi là kỹ sư phần mềm chuyên về thiết kế giao diện, nâng cao trải nghiệm người dùng, tôi tốt nghiệp trường đại học HUFLIT vào Sep 2022 với chuyên ngành cử nhân công nghệ phần mềm.\n\nHiện tại tôi đang là một Frontend Engineer với 4 năm kinh nghiệm làm việc với React/NextJs, TypeScript, và các công nghệ hiện đại khác. Tôi có nhiều kinh nghiệm làm việc trong lĩnh vực FinTech và blockchain, xử lý dữ liệu lớn và xây dựng hệ thống quản lý kho hàng lớn. Mục tiêu của tôi trong thời gian sắp đến là phát triển bản thân, học hỏi thêm nhiều về công nghệ, xu hướng giải quyết vấn đề và cách quản lý nhân sự để có thể trở thành Frontend Tech Lead.\n\nHiện tại, tôi đang tập trung vào hệ sinh thái React/NextJs, tối ưu hóa hiệu suất và xây dựng kiến trúc giao diện người dùng có thể mở rộng. Tôi thích giải quyết các vấn đề phức tạp và không ngừng học hỏi các công nghệ mới để đưa ra giải pháp tốt hơn.",
         "stats": {
             "years": "Năm kinh nghiệm",
-            "projects": "Dự án",
+            "projects": "Dự án lớn",
             "technologies": "Công nghệ"
         },
         "highlights": {
             "title": "Điểm mạnh",
-            "responsive": "Responsive Design",
+            "responsive": "Web3 & AI Integration",
             "performance": "Performance Optimization",
             "clean": "Clean Code & Best Practices",
             "ux": "UI/UX Thinking"
@@ -34,35 +38,69 @@
     },
     "skills": {
         "heading": "Kỹ năng",
-        "languages": "Ngôn ngữ",
-        "frameworks": "Frameworks & Libraries",
-        "styling": "Styling",
-        "tools": "Công cụ",
-        "others": "Khác"
+        "core": "Core & Frameworks",
+        "stateManagement": "State Management",
+        "ui": "UI/UX & Styling",
+        "api": "API & Data Handling",
+        "testing": "Testing & Tools",
+        "specialized": "Specialized (Web3 & AI)"
     },
     "experience": {
         "heading": "Kinh nghiệm",
-        "abc": {
-            "desc1": "Phát triển và bảo trì các ứng dụng web với React và Next.js",
-            "desc2": "Tối ưu hiệu năng website, cải thiện Core Web Vitals",
-            "desc3": "Code review và mentoring cho junior developers"
+        "alchemy": {
+            "summary": "Phát triển nền tảng GameHub Web3 quy mô doanh nghiệp và các hệ thống thao tác nội bộ.",
+            "clientDesc": "Nền tảng dành cho người dùng thực hiện giao dịch, nạp/rút và tham gia các trò chơi.",
+            "adminDesc": "Hệ thống quản trị chuyên sâu hỗ trợ chatbot AI, biểu đồ theo dõi giá và phân quyền người dùng.",
+            "title": "Project: Crypto GameHub Platform",
+            "c1": "Phát triển giao diện UI/UX động, đa luồng để nâng cao trải nghiệm người dùng trong các tính năng nạp, rút và gameplay.",
+            "c2": "Tái cấu trúc (refactor) Styled UI cũ sang thư viện UIKit và tận dụng shadcn/ui để chuẩn hóa, đảm bảo tính nhất quán trên toàn nền tảng và nâng tầm trải nghiệm người dùng.",
+            "c3": "Xây dựng và duy trì các tính năng cải thiện SEO phục vụ các chiến dịch marketing.",
+            "c4": "Tạo ra trải nghiệm web sống động (live-feeling) thông qua các cập nhật động và tính năng thời gian thực.",
+            "c5": "Phát triển hệ thống trò chuyện cho phép người dùng tương tác realtime.",
+            "a1": "Cập nhật codebase từ React 16 lên React 18+ với tiêu chuẩn ES6+ và chuyển hướng build sang Vite.js, giúp tối ưu hiệu suất, cải thiện chất lượng code, dễ duy trì và tăng tốc độ build.",
+            "a2": "Xây dựng dashboard biểu đồ theo dõi dòng tiền ra/vào của hệ thống, tăng cường khả năng báo cáo và giám sát.",
+            "a3": "Quản lý giao diện phân quyền (role-based access control) cho nhiều chức năng của Admin.",
+            "a4": "Tích hợp Socket.io cập nhật giá token theo thời gian thực (real-time), đảm bảo phản ánh chính xác biến động thị trường.",
+            "a5": "Xử lý số liệu lớn, tối ưu hóa hiệu suất cho hàng triệu người dùng truy cập cùng lúc và đảm bảo vận hành ổn định.",
+            "a6": "Tích hợp Chatbot AI (Gemini) hỗ trợ quản trị, dự báo hạn mức token, chi trả voucher và quota của chatbot.",
+            "a7": "Xây dựng cơ chế fallback mạnh cho AI bot để xử lý trơn tru các lỗi truy xuất dữ liệu."
         },
-        "xyz": {
-            "desc1": "Xây dựng giao diện người dùng responsive với React",
-            "desc2": "Tích hợp REST API và quản lý state với Redux"
+        "aion": {
+            "summary": "Phát triển các hệ thống ngân hàng với tính bảo mật cao.",
+            "vtmDesc": "Hệ thống giao dịch tự động tại các quầy VTM (Video Teller Machine).",
+            "title": "Project: VTM (Video Teller Machine)",
+            "desc1": "Phát triển các tính năng front-end tương thích cao (responsive), triển khai UI động cho các chức năng nạp/rút tiền qua VTM.",
+            "desc2": "Thiết kế kiến trúc xác thực phân quyền ở hệ thống Admin, thiết kế giao diện tùy chỉnh cho từng role nhằm giảm thiểu rủi ro rò rỉ dữ liệu và tăng bảo mật trải nghiệm.",
+            "desc3": "Tích hợp SDK Video Call hỗ trợ CSKH trực tuyến trên thiết bị VTM.",
+            "desc4": "Tối ưu hóa dữ liệu lớn thông qua Pagination, Virtual Scrolling và Elasticsearch phục vụ biểu đồ hiệu suất báo cáo thời gian thực.",
+            "desc5": "Viết Unit Test chi tiết cho components & APIs. Sử dụng Sentry để giám sát, ghi log và debug hiệu quả trên Production."
+        },
+        "itbee": {
+            "summary": "Phát triển hệ thống quản lý và nền tảng quảng bá dịch vụ chuỗi Spa/Clinic.",
+            "daysakiDesc": "Hệ thống Daysaki quản lý khách hàng và trải nghiệm chăm sóc dịch vụ Clinic.",
+            "title": "Project: Daysaki Spa & Clinic",
+            "desc1": "Phát triển web application cho Client và Admin sử dụng React.js, Next.js.",
+            "desc2": "Triển khai tính năng đặt lịch hẹn, lướt dịch vụ, đánh giá khách hàng trên Client, dùng Next.js để tối ưu SEO thuận lợi.",
+            "desc3": "Xây dựng hệ thống Admin bằng React.js, Redux Toolkit quản lý đơn đặt hàng, dữ liệu, thanh toán người dùng kết hợp Socket.io để realtime quản lý hóa đơn.",
+            "desc4": "Sử dụng GraphQL truy vấn và đồng bộ tối ưu hóa dữ liệu giữa Server và Client đa nền tảng một cách linh hoạt.",
+            "desc5": "Tối ưu tối đa SEO và Core Web Vitals nhằm định vị web nổi bật và thu hút nhiều traffic người dùng."
         }
     },
     "projects": {
         "heading": "Dự án",
         "viewDemo": "Xem Demo",
         "viewCode": "Xem Code",
-        "project1": {
-            "title": "E-Commerce Platform",
-            "description": "Nền tảng thương mại điện tử với giỏ hàng, thanh toán và quản lý sản phẩm."
+        "gamehub": {
+            "title": "Crypto Gamehub Platform",
+            "description": "Nền tảng trung tâm trò chơi Web3 tích hợp giao dịch tiền điện tử kèm hệ thống Telegram Chatbot CSKH (Gemini API). Tối ưu SEO với Next.js (App Router), xử lý Smart Contracts qua Wagmi/Ethers.js trên Ethereum/BNB Chain, đồng thời áp dụng kiến trúc 'Core Soul' cho chatbot để tối ưu token usage."
         },
-        "project2": {
-            "title": "Task Management App",
-            "description": "Ứng dụng quản lý công việc với drag & drop, real-time updates."
+        "vtm": {
+            "title": "VTM Transaction Management",
+            "description": "Hệ thống quản lý giao dịch nạp/rút tiền trên thiết bị VTM (Video Teller Machine) cho SacomBank. Thiết kế UI bảo mật cao, phát triển Web Admin quản lý với WebSockets (Socket.io) giảm thiểu độ trễ và tích hợp hệ thống Unit Test, Sentry log."
+        },
+        "daysaki": {
+            "title": "Daysaki Spa & Clinic",
+            "description": "Nền tảng quản lý quy trình chuỗi Spa/Clinic phục vụ đặt lịch hẹn và quảng bá chuẩn SEO. Xây dựng Admin Dashboard với các biểu đồ số liệu phức tạp và theo dõi quản lý đơn hàng hoàn toàn theo thời gian thực."
         }
     },
     "education": {

@@ -14,7 +14,6 @@ export function Projects() {
                 <AnimateOnScroll>
                     <h2
                         className="text-3xl md:text-5xl font-black mb-4 tracking-tight"
-                        style={{ fontFamily: "var(--font-heading)" }}
                     >
                         {t("heading")}
                         <span className="text-[var(--accent)]">.</span>
@@ -32,7 +31,7 @@ export function Projects() {
                                 <div className="group relative border border-[var(--border)] bg-[var(--bg)] overflow-hidden hover:border-[var(--accent)]/40 transition-all duration-300">
                                     {/* Project image area */}
                                     <div className="relative h-48 bg-gradient-to-br from-[var(--accent)]/5 to-[var(--accent)]/15 flex items-center justify-center overflow-hidden">
-                                        <div className="text-6xl font-black text-[var(--accent)] opacity-10 select-none" style={{ fontFamily: "var(--font-heading)" }}>
+                                        <div className="text-6xl font-black text-[var(--accent)] opacity-10 select-none font-heading">
                                             {String(i + 1).padStart(2, "0")}
                                         </div>
 
@@ -68,7 +67,6 @@ export function Projects() {
                                         <div className="flex items-center justify-between mb-2">
                                             <h3
                                                 className="text-lg font-bold"
-                                                style={{ fontFamily: "var(--font-heading)" }}
                                             >
                                                 {t(`${projectKey}.title`)}
                                             </h3>

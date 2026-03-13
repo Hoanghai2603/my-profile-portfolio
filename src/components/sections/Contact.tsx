@@ -19,7 +19,6 @@ export function Contact() {
                 <AnimateOnScroll>
                     <h2
                         className="text-3xl md:text-5xl font-black mb-4 tracking-tight"
-                        style={{ fontFamily: "var(--font-heading)" }}
                     >
                         {t("heading")}
                         <span className="text-[var(--accent)]">.</span>

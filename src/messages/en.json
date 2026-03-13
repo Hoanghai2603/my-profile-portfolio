@@ -1,16 +1,20 @@
 {
+    "location": {
+        "hcm": "Hanoi"
+    },
     "nav": {
         "about": "About",
         "skills": "Skills",
         "experience": "Experience",
         "projects": "Projects",
         "education": "Education",
-        "contact": "Contact"
+        "contact": "Contact",
+        "name": "Nguyen Hoang Hai"
     },
     "hero": {
         "greeting": "Hi, I'm",
-        "title": "Frontend Developer",
-        "tagline": "4+ years of experience building modern, performant, and user-friendly web interfaces.",
+        "title": "Frontend Engineer & Software Engineer",
+        "tagline": "I'm a Software Engineer specializing in front-end development with React/Next.js and TypeScript. I have experience in building scalable and maintainable web applications. Experienced in FinTech and blockchain projects, processing datasets with millions of records simultaneously, and architecting enterprise-scale inventory systems.",
         "cta": {
             "download": "Download CV",
             "contact": "Contact Me"
@@ -18,15 +22,15 @@
     },
     "about": {
         "heading": "About Me",
-        "bio": "I'm a Frontend Developer with over 4 years of experience building modern web applications. I'm passionate about creating beautiful interfaces, optimizing performance, and delivering the best user experience.",
+        "bio": "I am a software engineer specializing in user interface design and enhancing user experiences. I graduated from HUFLIT in Sep 2022 with a Bachelor's degree in Software Engineering.\n\nCurrently, I am a Frontend Engineer with 4 years of experience working with React/Next.js, TypeScript, and other modern technologies. I have extensive experience working in FinTech and blockchain, processing large datasets, and building large-scale inventory management systems. My upcoming goal is to develop myself, learn more about technologies, problem-solving trends, and team management to become a Frontend Tech Lead.\n\nAt present, I am focusing on the React/Next.js ecosystem, optimizing performance, and building scalable UI architectures. I enjoy solving complex problems and continuously learning new technologies to provide better solutions.",
         "stats": {
             "years": "Years of Experience",
-            "projects": "Projects",
+            "projects": "Major Projects",
             "technologies": "Technologies"
         },
         "highlights": {
             "title": "Strengths",
-            "responsive": "Responsive Design",
+            "responsive": "Web3 & AI Integration",
             "performance": "Performance Optimization",
             "clean": "Clean Code & Best Practices",
             "ux": "UI/UX Thinking"
@@ -34,35 +38,69 @@
     },
     "skills": {
         "heading": "Skills",
-        "languages": "Languages",
-        "frameworks": "Frameworks & Libraries",
-        "styling": "Styling",
-        "tools": "Tools",
-        "others": "Others"
+        "core": "Core & Frameworks",
+        "stateManagement": "State Management",
+        "ui": "UI/UX & Styling",
+        "api": "API & Data Handling",
+        "testing": "Testing & Tools",
+        "specialized": "Specialized (Web3 & AI)"
     },
     "experience": {
         "heading": "Experience",
-        "abc": {
-            "desc1": "Developed and maintained web applications with React and Next.js",
-            "desc2": "Optimized website performance, improved Core Web Vitals",
-            "desc3": "Code review and mentoring for junior developers"
+        "alchemy": {
+            "summary": "Core developer for enterprise-scale Web3 GameHub platform and internal operational systems.",
+            "clientDesc": "A client-facing platform for transactions, deposits, withdrawals, and gameplay.",
+            "adminDesc": "Administrative back-office equipped with AI bot integration, real-time charts, and role-based management.",
+            "title": "Project: Crypto GameHub Platform",
+            "c1": "Developed multi-threaded, dynamic UI/UX to enhance the user experience for deposit, withdrawal, and gameplay functionalities.",
+            "c2": "Refactored the existing Styled UI to UIKit and utilized shadcn/ui for UI standardization, ensuring a consistent, cohesive design across the platform and improving overall user experience.",
+            "c3": "Built and maintained features that improved SEO to support marketing efforts.",
+            "c4": "Created an immersive, live-feeling web experience through dynamic updates and time-based features.",
+            "c5": "Developed a chat communication system that enabled real-time interaction between users.",
+            "a1": "Refactored the codebase from React 16 to the latest React 18+ with ES6+ standards, and migrated build setup to Vite.js, improving code quality, maintainability, performance optimizations, and build speed.",
+            "a2": "Built a dashboard with charts to track the system's money input/output, enhancing monitoring and reporting capabilities.",
+            "a3": "Managed multi-role user interface elements for the admin web, supporting role-based access control.",
+            "a4": "Utilized socket.io to update token prices in real-time, ensuring token values reflect current market trends and providing accurate financial data.",
+            "a5": "Handled large-scale data, optimizing performance for millions of simultaneous users and ensuring smooth system operations.",
+            "a6": "Integrated Gemini AI chat box for efficient management, including forecasting token limits, voucher payouts, and bot token quotas.",
+            "a7": "Built robust fallback mechanisms for AI bots to handle data processing errors and ensure smooth interactions with users."
         },
-        "xyz": {
-            "desc1": "Built responsive user interfaces with React",
-            "desc2": "Integrated REST APIs and managed state with Redux"
+        "aion": {
+            "summary": "Developed high-security banking systems for internal users and customers.",
+            "vtmDesc": "An automated transaction system for VTM (Video Teller Machine) kiosks.",
+            "title": "Project: VTM (Video Teller Machine)",
+            "desc1": "Developed responsive front-end features in the web client, implementing dynamic UI components and interactive user experiences for deposit and withdrawal functionalities.",
+            "desc2": "Architected role-based authentication on the admin side and designed custom interfaces for each user role, ensuring appropriate access control, minimizing customer data exposure, and enhancing the user experience.",
+            "desc3": "Integrated SDK Video Call for live customer support directly from the VTM device.",
+            "desc4": "Optimized large-scale data handling with Pagination and Virtual Scrolling, and supported real-time data visualization with Elastic Search for efficient performance.",
+            "desc5": "Wrote comprehensive Unit Tests for components and APIs. Integrated Sentry to monitor, log, and effectively debug production issues."
+        },
+        "itbee": {
+            "summary": "Developed a full-stack management and marketing platform for Spa/Clinic chains.",
+            "daysakiDesc": "The Daysaki system enables comprehensive healthcare service access and management.",
+            "title": "Project: Daysaki Spa & Clinic",
+            "desc1": "Developed a web application for both client and admin using React.js and Next.js.",
+            "desc2": "Implemented client-side features for service browsing, appointment booking, and customer reviews, used Next.js for better supported for SEO.",
+            "desc3": "Built the Admin side with React.js and used Redux Toolkit and Redux Thunk to manage admin-side state for appointment management, payment processing, and customer data, and Socket.io real-time order management capabilities.",
+            "desc4": "Utilized GraphQL for efficient data fetching and management between the client and server, ensuring optimized and flexible queries.",
+            "desc5": "Optimized the website for SEO to improve Google search visibility and traffic."
         }
     },
     "projects": {
         "heading": "Projects",
         "viewDemo": "View Demo",
         "viewCode": "View Code",
-        "project1": {
-            "title": "E-Commerce Platform",
-            "description": "E-commerce platform with cart, checkout, and product management."
+        "gamehub": {
+            "title": "Crypto Gamehub Platform",
+            "description": "Centralized Web3 gaming platform integrating cryptocurrency transactions and an LLM-powered Telegram Chatbot (Gemini API) for customer service. Utilized Next.js (App Router) for SEO, handled transaction signing via Wagmi/Ethers.js on Ethereum/BNB Chain, and designed 'Core Soul' architecture to optimize LLM token usage."
         },
-        "project2": {
-            "title": "Task Management App",
-            "description": "Task management application with drag & drop and real-time updates."
+        "vtm": {
+            "title": "VTM Transaction Management",
+            "description": "Deposit/withdrawal transaction management system for SacomBank's Video Teller Machines (VTM). Designed highly secure UI, developed WebSocket-enabled Admin Dashboard for minimal latency, and integrated Unit Testing & Sentry logging."
+        },
+        "daysaki": {
+            "title": "Daysaki Spa & Clinic",
+            "description": "Process management and promotional platform for a Spa/Clinic chain with SEO optimization. Built Admin Dashboard featuring complex analytical charts and real-time order tracking capabilities."
         }
     },
     "education": {

@@ -14,7 +14,6 @@ export function Education() {
                 <AnimateOnScroll>
                     <h2
                         className="text-3xl md:text-5xl font-black mb-4 tracking-tight"
-                        style={{ fontFamily: "var(--font-heading)" }}
                     >
                         {t("heading")}
                         <span className="text-[var(--accent)]">.</span>
@@ -33,7 +32,6 @@ export function Education() {
                                     <div>
                                         <h3
                                             className="text-lg font-bold mb-1"
-                                            style={{ fontFamily: "var(--font-heading)" }}
                                         >
                                             {edu.degree}
                                         </h3>

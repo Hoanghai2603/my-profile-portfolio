@@ -13,7 +13,6 @@ export function Skills() {
                 <AnimateOnScroll>
                     <h2
                         className="text-3xl md:text-5xl font-black mb-4 tracking-tight"
-                        style={{ fontFamily: "var(--font-heading)" }}
                     >
                         {t("heading")}
                         <span className="text-[var(--accent)]">.</span>
@@ -21,31 +20,18 @@ export function Skills() {
                     <div className="w-16 h-[3px] bg-[var(--accent)] mb-12" />
                 </AnimateOnScroll>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {skillGroups.map((group, groupIndex) => (
+                <div className="flex flex-wrap gap-3 md:gap-4">
+                    {skillGroups.flatMap(group => group.skills).map((skill, index) => (
                         <AnimateOnScroll
-                            key={group.categoryKey}
-                            delay={groupIndex * 0.1}
+                            key={`${skill.name}-${index}`}
+                            delay={(index % 15) * 0.05}
                             variant="fadeUp"
                         >
-                            <div className="p-6 border border-[var(--border)] bg-[var(--surface)] hover:border-[var(--accent)]/30 transition-all duration-300 group">
-                                <h3
-                                    className="text-xs font-bold uppercase tracking-[0.25em] text-[var(--accent)] mb-5"
-                                    style={{ fontFamily: "var(--font-heading)" }}
-                                >
-                                    {t(group.categoryKey.split(".").pop() as string)}
-                                </h3>
-                                <div className="flex flex-wrap gap-2">
-                                    {group.skills.map((skill) => (
-                                        <span
-                                            key={skill.name}
-                                            className="px-3 py-1.5 text-sm font-medium text-[var(--text)] bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all duration-200 cursor-default"
-                                        >
-                                            {skill.name}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
+                            <span
+                                className="inline-block px-5 py-2.5 text-sm md:text-base font-medium text-[var(--text)] bg-[var(--surface)] border border-[var(--border)] rounded-lg hover:border-[var(--accent)] hover:text-[var(--accent)] hover:-translate-y-1 transition-all duration-300 shadow-sm hover:shadow-md cursor-default"
+                            >
+                                {skill.name}
+                            </span>
                         </AnimateOnScroll>
                     ))}
                 </div>
